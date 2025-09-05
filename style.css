@@ -27,7 +27,7 @@ header {
 
 header > img {
     margin-left: 20px;
-    height: 70px;
+    height: 98%;
 }
 
 header > nav {
@@ -52,7 +52,7 @@ header > nav > a {
 }
 
 .home {
-    height: 85vh;
+    height: 95vh;
     display: flex;
     background-image: url(imagens/pexels-3motional-studio-407102-1081685.jpg);
     background-position: center center;
@@ -68,14 +68,14 @@ header > nav > a {
 }
 
 .home > h1 {
-    font-size: 3.5em;
+    font-size: 6vh;
     margin: 20px 0px 20px 0px;
     color: white;
 }
 
 .home > p {
     color: white;
-    font-size: 2em;
+    font-size: 4vh;
     margin: 30px;
     line-height: 1.5em;
     font-family: "Story Script", sans-serif;
