@@ -296,6 +296,7 @@ header > nav > a {
     width: 50%;
     margin: 10px 0px;
     background-image: linear-gradient(to right, #44AAEE, #904CCB);
+    color: black;
     border: none;
     border-radius: 8px;
     font-size: 1.2em;
