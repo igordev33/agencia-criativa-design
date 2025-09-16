@@ -7,83 +7,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/logo.png" alt="Logo Criativa Web Desing">
-        <nav>
-            <button>Fale Conosco</button>
-        </nav>
+    <header class="header">
+        <img src="imagens/logo.png" alt="Logo Criativa Web Desing" class="header__logo">
+        <button class="header__button">Fale Conosco</button>
     </header>
     <main>
         <section class="home">
-            <h1>Criação de Site <strong id="destaqueRoxo">Profissional</strong> e <strong id="destaqueAzul">Web Design</strong></h1>
+            <h1 class="home__title">Criação de Site <strong class="home__title--roxo">Profissional</strong> e <strong class="home__title--azul">Web Design</strong></h1>
 
-            <p>Seu site moderno,<br> sua marca mais forte,<br> seus resultados maiores</p>
+            <p class="home__text">Seu site moderno,<br> sua marca mais forte,<br> seus resultados maiores</p>
 
-            <button>Solicitar Orçamento</button>
+            <button class="home__button">Solicitar Orçamento</button>
         </section>
 
-        <section class="sobreNos">
-            <div>
-                <h2>Sobre Nós</h2>
+        <section class="sobre">
+            <h2 class="sobre__title">Sobre Nós</h2>
 
-                <img src="imagens/logo.png" alt="Logo Criativa Web Design">
-
-                <p>Na <strong id="destaqueRoxo">Criativa Web Design</strong>, transformamos ideias em experiências digitais únicas. Desenvolvemos sites modernos, responsivos e alinhados à identidade da sua marca, sempre com foco em usabilidade e resultados. Seja para atrair novos clientes, fortalecer sua presença online ou destacar seu negócio da concorrência, nossa equipe combina design criativo e tecnologia para entregar soluções que fazem diferença.</p>
-            </div>
+            <p class="sobre__text">Na <strong class="sobre__text--roxo">Criativa Web Design</strong>, transformamos ideias em experiências digitais únicas. Desenvolvemos sites modernos, responsivos e alinhados à identidade da sua marca, sempre com foco em usabilidade e resultados. Seja para atrair novos clientes, fortalecer sua presença online ou destacar seu negócio da concorrência, nossa equipe combina design criativo e tecnologia para entregar soluções que fazem diferença.</p>
         </section>
 
         <section class="servicos">
-            <h2>Conheça nossa gama de soluções</h2>
+            <h2 class="servicos__title">Conheça nossa gama de soluções</h2>
 
-            <div>
-                <h3>Atendimento Personalizado</h3>
-                <p>Nosso compromisso com a excelência e o atendimento personalizado nos permite desenvolver estratégias que realmente atendam às necessidades e objetivos de cada cliente.</p>
+            <div class="servicos__card">
+                <h3 class="servicos__card-title">Atendimento Personalizado</h3>
+                <p class="servicos__card-text">Nosso compromisso com a excelência e o atendimento personalizado nos permite desenvolver estratégias que realmente atendam às necessidades e objetivos de cada cliente.</p>
             </div>
 
-            <div>
-                <h3>Tráfego Pago</h3>
-                <p>Atraímos clientes qualificados por meio de estratégias de tráfego pago segmentadas pelo público ideal da sua empresa.</p>
+            <div class="servicos__card">
+                <h3 class="servicos__card-title">Tráfego Pago</h3>
+                <p class="servicos__card-text">Atraímos clientes qualificados por meio de estratégias de tráfego pago segmentadas pelo público ideal da sua empresa.</p>
             </div>
 
-            <div>
-                <h3>Páginas Online</h3>
-                <p>Oferecemos Landing Pages e sites projetados com as melhores estratégias para aumentar suas vendas no digital.</p>
+            <div class="servicos__card">
+                <h3 class="servicos__card-title">Páginas Online</h3>
+                <p class="servicos__card-text">Oferecemos Landing Pages e sites projetados com as melhores estratégias para aumentar suas vendas no digital.</p>
             </div>
 
-            <div>
-                <h3>Mídias Sociais</h3>
-                <p>Utilizamos Copywriting e Design para garantir que você passe uma mensagem clara e atrativa ao seu público-alvo.</p>
+            <div class="servicos__card">
+                <h3 class="servicos__card-title">Mídias Sociais</h3>
+                <p class="servicos__card-text">Utilizamos Copywriting e Design para garantir que você passe uma mensagem clara e atrativa ao seu público-alvo.</p>
             </div>
 
-            <button>Entre em contato</button>
+            <button class="servicos__button">Entre em contato</button>
         </section>
 
         <section class="depoimentos">
-            <h2>Depoimento de nossos clientes</h2>
-            <div class="persona" id="persona1">
-            <img src="./imagens/persona1.png" alt="João Pereira">
-            <p class="personaName">João Pereira</p>
-            <p class="personaProf">Dono de uma cafeteria artesanal</p>
-            <p class="personaDep">
+            <h2 class="depoimentos__title">Depoimento de nossos clientes</h2>
+            <div class="depoimentos__persona" id="persona1">
+            <img class="depoimentos__persona-img" src="./imagens/persona1.png" alt="João Pereira">
+            <p class="depoimentos__persona-nome">João Pereira</p>
+            <p class="depoimentos__persona-prof">Dono de uma cafeteria artesanal</p>
+            <p class="depoimentos__persona-text">
                     "A Criativa Web Design transformou totalmente a presença online da minha   cafeteria. O novo site ficou moderno, fácil de navegar e já está atraindo novos clientes todos os dias. Além disso, o trabalho de tráfego pago trouxe muito mais movimento para o meu negócio. 
                     Estou extremamente satisfeito com o resultado!"</p>
             </div>
-            <div id="persona2" class="persona" >
-                <img src="./imagens/persona2.png" alt="Camila Rodrigues">
-                <p class="personaName">Camila Rodrigues</p>
-                <p class="personaProf">Psicóloga</p>
-                <p class="personaDep">
+            <div id="persona2" class="depoimentos__persona" >
+                <img class="depoimentos__persona-img" src="./imagens/persona2.png" alt="Camila Rodrigues">
+                <p class="depoimentos__persona-nome">Camila Rodrigues</p>
+                <p class="depoimentos__persona-prof">Psicóloga</p>
+                <p class="depoimentos__persona-text">
                     "Eu precisava de um site que transmitisse confiança e profissionalismo
                     para os meus pacientes. A equipe da Criativa Web Design não só criou uma
                     página incrível, mas também me ajudou com automações que facilitaram o
                     agendamento das consultas. Foi um divisor de águas na forma como atendo
                     e me conecto com meus clientes."</p>
             </div>
-            <div id="persona3" class="persona" >
-                <img src="./imagens/persona3.png" alt="">
-                <p class="personaName">Rafael Martins</p>
-                <p class="personaProf">Dono de e-commerce de moda</p>
-                <p class="personaDep">
+            <div id="persona3" class="depoimentos__persona" >
+                <img class="depoimentos__persona-img" src="./imagens/persona3.png" alt="Rafael Martins">
+                <p class="depoimentos__persona-nome">Rafael Martins</p>
+                <p class="depoimentos__persona-prof">Dono de e-commerce de moda</p>
+                <p class="depoimentos__persona-text">
                     "Meu e-commerce já existia, mas estava estagnado. A Criativa Web Design
                     trouxe uma visão estratégica: criaram uma landing page focada em
                     conversão e ajustaram minhas campanhas de tráfego pago. O resultado foi
@@ -93,16 +87,16 @@
         </section>
 
         <section class="contato">
-            <div>
-                <h2>Dados para contato</h2>
-                <p><strong>Endereço:</strong> Estr. B - Condominio Jardim das Oliveiras, Goiânia - GO, 74484-602</p>
-                <p><strong>E-mail:</strong> igoraf.dev33@gmail.com</p>
-                <p><strong>WhatsApp:</strong> (62)98309-1240</p>
-                <p><strong>Ou deixe seus dados para contato:</strong></p>
+            <div class="contato__area">
+                <h2 class="contato__title">Dados para contato</h2>
+                <p class="contato__text"><strong class="contato__text--purple">Endereço:</strong> Estr. B - Condominio Jardim das Oliveiras, Goiânia - GO, 74484-602</p>
+                <p class="contato__text"><strong class="contato__text--purple">E-mail:</strong> igoraf.dev33@gmail.com</p>
+                <p class="contato__text"><strong class="contato__text--purple">WhatsApp:</strong> (62)98309-1240</p>
+                <p class="contato__text"><strong class="contato__text--purple">Ou deixe seus dados para contato:</strong></p>
                 <form>
-                    <input type="text" id="nome" placeholder="Nome"><br>
-                    <input type="tel" id="celular" placeholder="Número de celular"><br>
-                    <button>Enviar</button>
+                    <input class="contato__input" type="text" id="nome" placeholder="Nome"><br>
+                    <input class="contato__input" type="tel" id="celular" placeholder="Número de celular"><br>
+                    <button class="contato__button">Enviar</button>
                 </form>
             </div>
         </section>

@@ -10,7 +10,7 @@ section {
     width: 100%;
 }
 
-header {
+.header {
     display: flex;
     background-color: rgba(0, 0, 0, 0.911);
     color: white;
@@ -20,16 +20,13 @@ header {
     height: 8vh;
 }
 
-header > img {
+.header__logo {
     margin-left: 20px;
     height: 98%;
 }
 
-header > nav {
+.header__button {
     align-self: center;
-}
-
-header > nav > button {
     color: black;
     border: none;
     padding: 10px;
@@ -38,12 +35,6 @@ header > nav > button {
     border-radius: 10px;
     background-image: linear-gradient(to right, #44AAEE, #904CCB);
     font-weight: bolder;
-}
-
-header > nav > a {
-    color: white;
-    margin: 5px;
-    text-decoration: none;
 }
 
 .home {
@@ -62,7 +53,7 @@ header > nav > a {
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.311);
 }
 
-.home > h1 {
+.home__title {
     font-size: 6vh;
     margin: 20px 0px 20px 0px;
     color: white;
@@ -70,22 +61,22 @@ header > nav > a {
     margin-top: 20px;
 }
 
-.home > p {
+.home__text {
     color: white;
     font-size: 4vh;
     margin: auto 30px;
     line-height: 1.5em;
 }
 
-#destaqueRoxo {
+.home__title--roxo {
     color: #904CCB;
 }
 
-#destaqueAzul {
+.home__title--azul {
     color: #44AAEE;
 }
 
-.home > button {
+.home__button {
     background-image: linear-gradient(to right, #44AAEE, #904CCB);
     border: none;
     width: 75vw;
@@ -99,42 +90,31 @@ header > nav > a {
     color: black;
 }
 
-
-.sobreNos {
+.sobre {
     background-color: #0F1117;
     color: white;
-    padding: 30px;
-}
-
-.sobreNos > div {
-    display: grid;
-    padding: 20px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    padding: 20px 50px;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.444);
+    text-align: center;
 }
 
-.sobreNos > div > h2 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.sobre__title {
     font-size: 2.5em;
-    margin: 10px;
+    margin-bottom: 30px;
     color: #904CCB;
 }
 
-.sobreNos > div > img {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    height: 100px;
-}
-
-.sobreNos > div > p {
+.sobre__text {
     text-indent: 2em;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     font-size: 1.5em;
     text-align: justify;
     line-height: 1.5em;
+}
+
+.sobre__text--roxo {
+  color: #904CCB;
 }
 
 .servicos {
@@ -146,7 +126,14 @@ header > nav > a {
     align-items: center;
 }
 
-.servicos > div {
+.servicos__title {
+    text-align: center;
+    color: #904CCB;
+    font-size: 2.5em;
+    margin: 10px;
+}
+
+.servicos__card {
     padding: 10px;
     text-align: justify;
     background-color: #181c24;
@@ -157,26 +144,18 @@ header > nav > a {
     line-height: 1.5em;
 }
 
-.servicos > h2 {
-    text-align: center;
-    color: #904CCB;
-    font-size: 2.5em;
-    margin: 10px;
-
-}
-
-.servicos > div > h3{
+.servicos__card-title {
     margin-bottom: 10px;
     text-align: center;
     font-weight: bolder;
     font-size: 1.5em;
 }
 
-.servicos > div > p {
+.servicos__card-text {
     text-indent: 2em;
 }
 
-.servicos > button {
+.servicos__button {
     background-image: linear-gradient(to right, #44AAEE, #904CCB);
     border: none;
     width: 75vw;
@@ -197,13 +176,13 @@ header > nav > a {
     background-image: linear-gradient(to top, #904CCB 0%, #000233 90%);
 }
 
-.depoimentos > h2 {
+.depoimentos__title {
     text-align: center;
     color: #904CCB;
     font-size: 2.5em;
 }
 
-.persona {
+.depoimentos__persona {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
@@ -216,13 +195,13 @@ header > nav > a {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.371);
 }
 
-.persona > img {
+.depoimentos__persona-img {
     width: 75px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
-.personaName {
+.depoimentos__persona-nome {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     font-size: 1.6em;
@@ -230,7 +209,7 @@ header > nav > a {
     font-family: "Story Script", sans-serif;
 }
 
-.personaProf {
+.depoimentos__persona-prof {
     grid-column: 2 / 3;
     grid-row: 1/2;
     align-self: flex-end;
@@ -239,7 +218,7 @@ header > nav > a {
     font-size: 1.1em;
 }
 
-.personaDep {
+.depoimentos__persona-text {
     text-indent: 2em;
     padding: 15px 0px;
     grid-column: 1 / 3;
@@ -258,32 +237,32 @@ header > nav > a {
     
 }
 
-.contato > div {
+.contato__area {
     background-color: #181c24;
     width: 95vw;
     padding: 5px;
     border-radius: 15px;
 }
 
-.contato > div > h2 {
+.contato__title {
     font-size: 2.5em;
     color: #904CCB;
 }
 
-.contato > div > p {
+.contato__text {
     font-size: 1.2em;
     margin: 8px;
     color: white;
     font-weight: 500;
 }
 
-.contato > div > p > strong {
+.contato__text--purple {
     font-size: 1.21em;
     color: #904CCB;
     font-weight: 900;
 }
 
-.contato > div > form > input {
+.contato__input {
     text-align: center;
     padding: 5px;
     margin: 5px;
@@ -291,7 +270,7 @@ header > nav > a {
     border-radius: 8px;
 }
 
-.contato > div > form > button {
+.contato__button {
     padding: 7px;
     width: 50%;
     margin: 10px 0px;
@@ -315,241 +294,222 @@ footer {
 
 @media (min-width: 48em) {
   /* ajustes para tablets */
-  header > nav > button {
+  .header__button {
     font-size: 2em;
     flex-shrink: 0;
     width: 270px;
   }
 
-  .home > h1 {
+  .home__title {
     padding: 50px;
     font-size: 10vw;
   }
 
-  .home > p {
+  .home__text {
     font-size: 8vw;
   }
 
-  .home > button {
+  .home__button {
     font-size: 3em;
     width: 60%;
   }
 
-  .sobreNos > div{
-    width: 90%;
-    margin: auto;
-  }
-
-  .sobreNos > div > h2 {
+  .sobre__title {
     font-size: 6vw;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 100px;
   }
 
-  .sobreNos > div > img {
-    width: 15vw;
-    height: 15vw;
-    margin-left: auto;
-  }
-
-  .sobreNos > div > p {
+  .sobre__text {
     font-size: 3vw;
   }
 
-  .servicos > h2 {
+  .servicos__title {
     font-size: 6vw;
   }
 
-  .servicos > div {
+  .servicos__card {
     width: 70%;
     font-size: 2.5vw;
     padding: 30px;
   }
 
 
-  .servicos > div > h3 {
+  .servicos__card-title {
     font-size: 4.5vw;
     margin-bottom: 40px;
   }
 
-  .servicos > button {
+  .servicos__button {
     font-size: 3em;
     width: 60%;
   }
 
-  .depoimentos > h2 {
+  .depoimentos__title {
     font-size: 6vw;
     margin: 50px;
   }
 
-  .depoimentos > div {
+  .depoimentos__persona {
     width: 60%;
   }
 
-  .persona > img {
+  .depoimentos__persona-img {
     margin: 10px 20px 10px 30px;
     width: 10vw;
   }
 
-  .personaName {
+  .depoimentos__persona-nome {
     font-size: 3vw;
     margin-right: auto;
     margin-top: 50px;
   }
 
-  .personaProf {
+  .depoimentos__persona-prof {
     font-size: 2vw;
   }
 
-  .personaDep {
+  .depoimentos__persona-text {
     font-size: 2vw;
   }
 
-  .contato > div {
+  .contato__area {
     width: 80%;
   }
 
-  .contato > div > h2 {
+  .contato__title {
     font-size: 6vw;
   }
 
-  .contato > div > p {
+  .contato__text {
     font-size: 3vw;
   }
 
-  .contato > div > form > input {
+  .contato__input {
     width: 60%;
     height: 4vh;
   }
 
-  .contato > div > form > button {
+  .contato__button {
     font-size: 1.5em;
   }
 }
 
 @media (min-width: 64em){
 /* ajustes para desktop */
-    header {
-        height: 60px;
+    .header {
+        height: 12vh;
     }
 
-   header > img {
+   .header__logo {
     margin-left: 100px;
     width: 70px;
     height: 70px;
    }
 
-   header > nav > button {
+   .header__button {
     font-size: 1vw;
-    height: 80%;
+    height: 70%;
     padding: 10px;
     width: 10vw;
     margin-right: 100px;
    }
 
-   .home > h1 {
+   .home__title {
     font-size: 4vw;
     padding: 50px 300px;
    }
 
-   .home > p {
+   .home__text {
     font-size: 3vw;
     margin-bottom: 20px;
    }
 
-   .home > button {
+   .home__button {
     font-size: 1.3vw;
     width: 30%;
    }
-   
-   .sobreNos > div {
-     width: 70%;   
-   }
 
-   .sobreNos > div> h2 {
+   .sobre__title {
     font-size: 4vw;
    }
 
-   .sobreNos > div > p {
+   .sobre__text {
     font-size: 2vw;
+    width: 60vw;
+    margin: auto;
    }
 
-   .sobreNos > div > img {
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-   }
-
-   .servicos > h2 {
+   .servicos__title {
     font-size: 4vw;
    }
 
-   .servicos > div {
+   .servicos__card {
     width: 40%;
    }
 
-   .servicos > div > h3 {
+   .servicos__card-title {
     font-size: 2vw;
     margin-bottom: 10px;
    }
 
-   .servicos > div > p {
+   .servicos__card-text {
     font-size: 1.2vw;
     line-height: 1.3em;
    }
 
-   .servicos > button {
+   .servicos__button {
     width: 30%;
     font-size: 1.2em;
    }
 
-   .depoimentos > h2 {
+   .depoimentos__title {
     font-size: 4vw;
    }
 
-   .depoimentos > div {
+   .depoimentos__persona {
     width: 30%;
    }
 
-   .persona > img {
+   .depoimentos__persona-img {
     width: 70px;
     margin: 5px 10px ;
    }
 
-   .personaName {
+   .depoimentos__persona-nome {
     font-size: 1.5em;
     margin-top: 10px;
    }
 
-   .personaProf {
+   .depoimentos__persona-prof {
     font-size: 1em;
    }
 
-   .personaDep {
+   .depoimentos__persona-text {
     font-size: 1em;
    }
 
-   .contato > div {
+   .contato__area {
     width: 90%;
    }
 
-   .contato > div > h2 {
+   .contato__title {
     font-size: 4vw;
    }
 
-   .contato > div > p {
+   .contato__text {
     font-size: 1em;
    }
 
-   .contato > div > form > input {
+   .contato__input {
     width: 25%;
     font-size: 1em;
     border-radius: 5px;
     padding: 15px;
    }
 
-   .contato > div > form > button {
+   .contato__button {
     font-size: 1em;
     width: 20%;
    }
